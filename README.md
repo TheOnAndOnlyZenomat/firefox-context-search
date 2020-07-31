@@ -1,2 +1,2 @@
 # firefox-context-search
-A Firefox extension for highlighted text on various platforms
+A Firefox extension to search for the highlighted text on various platforms
