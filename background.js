@@ -9,29 +9,29 @@ function onCreation() {
 
 browser.menus.create({
     id: "wikipedia",
-    title: "Seach on Wikipdia for '%s'",
-    contexts: ["selection"]
+    title: "Wikipdia: '%s'",
+    contexts: ["selection"],
 }, onCreation);
 
 browser.menus.create({
     id: "youtube",
-    title: "Seach on YouTube for '%s'",
+    title: "YouTube:'%s'",
     contexts: ["selection"]
 }, onCreation);
 
 browser.menus.create({
     id: "duckduckgo",
-    title: "Seach on DuckDuckGo for '%s'",
+    title: "DuckDuckGo: '%s'",
     contexts: ["selection"]
 }, onCreation);
 
 browser.menus.create({
     id: "stackoverflow",
-    title: "Seach on Stackoverflow for '%s'",
+    title: "Stackoverflow: '%s'",
     contexts: ["selection"]
 }, onCreation);
 
-browser.menus.onClicked.addListener(function(info, tab) {
+browser.menus.onClicked.addListener(function(info) {
     if (info.menuItemId == "wikipedia") {
         console.log(info.selectionText);
         var creating = browser.tabs.create({
