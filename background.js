@@ -9,25 +9,25 @@ function onCreation() {
 
 browser.menus.create({
     id: "wikipedia",
-    title: "Wikipdia: '%s'",
+    title: "Wikipdia",
     contexts: ["selection"],
 }, onCreation);
 
 browser.menus.create({
-    id: "youtube",
-    title: "YouTube:'%s'",
+    id: "duckduckgo",
+    title: "DuckDuckGo",
     contexts: ["selection"]
 }, onCreation);
 
 browser.menus.create({
-    id: "duckduckgo",
-    title: "DuckDuckGo: '%s'",
+    id: "youtube",
+    title: "YouTube",
     contexts: ["selection"]
 }, onCreation);
 
 browser.menus.create({
     id: "stackoverflow",
-    title: "Stackoverflow: '%s'",
+    title: "Stackoverflow",
     contexts: ["selection"]
 }, onCreation);
 
