@@ -7,25 +7,25 @@ function onCreation() {
 
 browser.menus.create({
     id: "wikipedia",
-    title: "Seach on Wikipdia for %s",
+    title: "Seach on Wikipdia for '%s'",
     contexts: ["selection"]
 }, onCreation);
 
 browser.menus.create({
     id: "youtube",
-    title: "Seach on YouTube for %s",
+    title: "Seach on YouTube for '%s'",
     contexts: ["selection"]
 }, onCreation);
 
 browser.menus.create({
     id: "duckduckgo",
-    title: "Seach on DuckDuckGo for %s",
+    title: "Seach on DuckDuckGo for '%s'",
     contexts: ["selection"]
 }, onCreation);
 
 browser.menus.create({
     id: "stackoverflow",
-    title: "Seach on Stackoverflow for %s",
+    title: "Seach on Stackoverflow for '%s'",
     contexts: ["selection"]
 }, onCreation);
 
