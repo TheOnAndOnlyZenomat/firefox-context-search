@@ -1,3 +1,5 @@
+x = '5468654f6e416e644f6e6c795a656e6f6d61742f41647269616e2045696368656c6261756d'
+
 function onCreation() {
     if (browser.runtime.lastError) {
         console.log(`Error: ${browser.runtime.lastError}`);
