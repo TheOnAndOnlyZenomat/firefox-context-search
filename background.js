@@ -11,24 +11,70 @@ browser.menus.create({
     id: "wikipedia",
     title: "Wikipdia",
     contexts: ["selection"],
+    icons: {
+        "16": "icons/wikipedia-icon.png",
+        "32": "icons/wikipedia-icon.png"
+    }
 }, onCreation);
 
 browser.menus.create({
     id: "duckduckgo",
     title: "DuckDuckGo",
-    contexts: ["selection"]
+    contexts: ["selection"],
+    icons: {
+        "16": "icons/ddg-icon.png",
+        "32": "icons/ddg-icon.png"
+    }
 }, onCreation);
 
 browser.menus.create({
     id: "youtube",
     title: "YouTube",
-    contexts: ["selection"]
+    contexts: ["selection"],
+    icons: {
+        "16": "icons/youtube-icon.png",
+        "32": "icons/youtube-icon.png"
+    }
+}, onCreation);
+
+browser.menus.create({
+    id: "dict",
+    title: "Dict.cc",
+    contexts: ["selection"],
+    icons: {
+        "16": "icons/dict-icon.png",
+        "32": "icons/dict-icon.png"
+    }
+}, onCreation);
+
+browser.menus.create({
+    id: "amazon",
+    title: "Amazon",
+    contexts: ["selection"],
+    icons: {
+        "16": "icons/amazon-icon.png",
+        "32": "icons/amazon-icon.png"
+    }
 }, onCreation);
 
 browser.menus.create({
     id: "stackoverflow",
     title: "Stackoverflow",
-    contexts: ["selection"]
+    contexts: ["selection"],
+    icons: {
+        "16": "icons/so-icon.png",
+        "32": "icons/so-icon.png"
+    }
+}, onCreation);
+
+browser.menus.create({
+    id: "github",
+    title: "Github",
+    contexts: ["selection"],
+    icons: {
+        "16": "icons/github-icon.png",
+        "32": "icons/github-icon.png"
+    }
 }, onCreation);
 
 browser.menus.onClicked.addListener(function(info) {
@@ -58,6 +104,27 @@ browser.menus.onClicked.addListener(function(info) {
         var creating = browser.tabs.create({
             active: false,
             url:"https://stackoverflow.com/search?q="+info.selectionText
+        });
+    }
+    else if (info.menuItemId == "dict") {
+        console.log(info.selectionText);
+        var creating = browser.tabs.create({
+            active: false,
+            url:"https://www.dict.cc/?s="+info.selectionText
+        });
+    }
+    else if (info.menuItemId == "github") {
+        console.log(info.selectionText);
+        var creating = browser.tabs.create({
+            active: false,
+            url:"https://github.com/search?q="+info.selectionText
+        });
+    }
+    else if (info.menuItemId == "amazon") {
+        console.log(info.selectionText);
+        var creating = browser.tabs.create({
+            active: false,
+            url:"https://www.amazon.de/s?k="+info.selectionText
         });
     }
 })

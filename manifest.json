@@ -3,7 +3,7 @@
     "name": "Context Searcher",
     "version": "1.1",
 
-    "description": "Search for highlighted text on Wikipedia, DuckDuckGo, YouTube and Stackoverflow from the context menu. Find The source code here: https://github.com/TheOnAndOnlyZenomat/firefox-context-search",
+    "description": "Search for highlighted text on Wikipedia, DuckDuckGo, YouTube, Dict.cc and Stackoverflow from the context menu. Find The source code here: https://github.com/TheOnAndOnlyZenomat/firefox-context-search",
 
     "background": {
         "scripts": ["background.js"]
@@ -14,6 +14,6 @@
     ],
 
     "icons": {
-        "48": "icon/icon-48.png"
+        "48": "icons/icon-48.png"
     }
 }
